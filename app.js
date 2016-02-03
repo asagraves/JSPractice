@@ -1,16 +1,29 @@
-var greet = 'Hello!';
-var greet = 'Hola!';
+greet();
 
-console.log(greet);
+function greet() {
+  console.log('hi');
+}
 
-var english = {
-  greetings: {
-    basic: 'Hello!'
-  }
-};
 
-var spanish = {};
+var anonGreet = function() {
+  console.log('hi');
+}
 
-spanish.greet = 'Hola!';
+anonGreet();
 
-console.log(english);
+
+function log(a) {
+  a();
+}
+
+log(function() {
+  console.log('hi');
+});
+
+
+
+
+
+
+
+
